@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Louis Yudowitz</title>
+
+  <link href="assets/pictures/professionalPic.JPG" rel="icon">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Louis Yudowitz</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about"><b>About Me</b></a></li>
+          <li><a class="nav-link scrollto" href="#research"><b>Research</b></a></li>
+          <li><a class="nav-link scrollto" href="#publications"><b>Publications</b></a></li>
+          <li><a class="nav-link scrollto" href="#activities"><b>Talks, Teaching, and Other Activities</b></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="about" class="about">
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <img src="assets/pictures/professionalPic.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="icon-box">
+              <h4 class="title">About Me</h4>
+              <p>Hello and welcome to my website! I'm a PhD student at Queen Mary University of London under the supervision of Reto Buzano (currently at Universit&agrave degli Studi di Torino) and Huy Nguyen. I obtained my master's degree (MASt) from the the University of Warwick and my BSc (Mathematics and Computer Science) from King's College London. My research interests include geometric flows (with a current focus on Ricci flow for my PhD thesis), boundary value problems, and special geometric objects like Einstein manifolds and minimal surfaces.</p>
+              <br> <br>
+              <h4 class="title">Contact Info and Research Links</h4>
+              <p class="description">
+                  Email: l.yudowitz@qmul.ac.uk <br><br> 
+                  Address: Queen Mary University of London, Mile End Rd, London E1 4NS <br><br> 
+                  <a href="assets/yudowitzCV.pdf" target="_blank" rel="noopener noreferrer"><b>CV</b></a>,
+                  <a href="https://arxiv.org/search/math?searchtype=author&query=Yudowitz%2C+L" target="_blank" rel="noopener noreferrer"><b>Ar&#967iv Profile</b></a>,
+                  <a href="https://www.researchgate.net/profile/Louis-Yudowitz" target="_blank" rel="noopener noreferrer"><b>ResearchGate Profile</b></a>
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="research">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Research</h2>
+        </div>
+
+        <div class="row">
+            <h2><b>Overview of My Research</b></h2>
+            <p>My research largely focuses on Ricci flow, &#8706;<sub>t</sub> g(t) = -2Ric(g(t)), a geometric heat flow originally introduced to uniformize manifolds and then classify them using a surgery procedure. Due to the non-linearity of the equation, one expects to encounter finite time singularities. That is, when the curvature tensor becomes unbounded in some region as t &#8594; T. This is a common sort of behavior in non-linear PDEs and some standard problems are to understand the singularity formation by taking blow-up limits ("zooming in" on the singular region) and then classify the possible limits, as well as figuring out how to continue the flow past the singular time.</p><br>
+            <h4><u>Gaussian Bounds of Heat Kernels for Evolving Manifolds</u></h4>
+
+            <div class="center">
+              <img src="assets/gifs/gaussianGif.gif" class="center">
+            </div>
+
+            <p>
+              If a singularity forms at a "Type I rate", then it has been shown [Naber (2010), Enders-M&#252;ller-Topping (2011), Mantegazza-M&#252;ller (2015)] that blow-ups in this case yield non-flat gradient shrinking Ricci solitons (manifolds which shrink monotonically under Ricci flow). The proofs of these results vitally depend on good control of the exponential weight in Perelman's W entropy, a monotone quantity which is constant on gradient shrinkers. Since this exponential weight satisfies an adjoint heat equation, control of it comes in the form of "Gaussian bounds" for the heat kernel. Such bounds have been derived under a variety of conditions, using different methods in each case. In [2], I have tried to find a more unified approach to proving such Gaussian bounds, which resulted in estimates depending on the evolution of the distance function under Ricci flow, rather than directly on the curvature of the evolving manifold. I also showed these results hold for manifolds evolving under a wider class of flows, &#8706;<sub>t</sub> g(t) = -2Sc(g(t)), provided the symmetric 2-tensor Sc satisfies an inequality involving an adjoint heat equation, Bianchi type identity, and comparison to the Ricci tensor.
+            </p>
+            <h4><u>Bubble Tree Convergence of Shrinking Ricci Solitons</u></h4>
+
+            <div class="center">
+              <img src="assets/gifs/bubblingGif.gif" class="center">
+            </div>
+            <p>
+              Currently, a full classification of shrinking solitons is unknown. In low dimensions (n=2,3) we know that they are either (quotients of) spheres or cylinders, or Euclidean space [Hamilton (1995), Perelman (2002, 2003), Ni-Wallach (2008), Cao-Chen-Zhou (2008), Naber (2010)]. More recently, smooth 4-dimensional K&#228;hler shrinkers have been classified [Bamler-Cifarelli-Conlon-Deruelle (2022)]. However, recent compactness theorems indicate blow-ups in dimensions n &#8805; 4 can yield shrinkers that are singular themselves [Haslhofer-M&#252;ller (2011, 2015), Bamler (2020)] which poses another issue to classification. I've investigated this singularity formation, provided the singular set consists of isolated cone points ([1]). This involved applying bubble tree analysis to the space of shrinkers with locally bounded energy by performing successive blow-ups around each singular point. This allowed for the proof of an energy identity which, through the Chern-Gauss-Bonnet theorem, shows that any topology lost due to the singularity formation can be recovered by blowing up around the singular points. The bubble tree analysis also yielded a local diffeomorphism finiteness theorem, which acts as a qualitative classification theorem. 
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="publications">
+      <div class="container">
+        <div class="section-title">
+          <br><br><h2>Publications</h2>
+        </div>
+
+        <!--<h4><u>Geometric Analysis:</u></h4>-->
+        <div class="row">         
+          <div class="content">           
+            <ol>
+              <li><i class="bi bi-check-circled"></i> <b>Bubble Tree Convergence and Local Diffeomorphism Finiteness for Gradient Ricci Shrinkers</b>, (joint with R. Buzano). ArXiv: 2206.06791 (2022). Submitted. [<a href="https://arxiv.org/abs/2206.06791" target="_blank" rel="noopener noreferrer">Ar&#967iv</a>]</li>
+              <li><i class="bi bi-check-circled"></i> <b>Gaussian Upper Bounds for the Heat Kernel on Evolving Manifolds</b>, (joint with R. Buzano). ArXiv:2007.07112 (2020). Submitted. [<a href="https://arxiv.org/abs/2007.07112" target="_blank" rel="noopener noreferrer">Ar&#967iv</a>]</li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+    <section id="activities" class="activities">
+      <div class="container">
+        <div class="section-title">
+          <br><br><h2>Talks, Teaching, and Other Activities</h2>
+        </div>
+
+        <div class = "row">
+          <div class="col-lg-4 order-1 order-lg-2">
+            <img src="assets/pictures/qmulPic.jpg" class="img-fluid-scroll" alt="">
+          </div>
+
+          <div class="col-lg-8 order-1 order-lg-2">         
+            <div class="content">
+              <h3><u>Invited/Contributed Talks</u></h3>            
+              <ul>
+                <li><i class="bi bi-check-circled">KTH Differential Geometry and General Relativity Seminar: ``Bubble Tree Convergence of Gradient Ricci Shrinking Solitons". (Jan. 19, 2023)</li>
+                <li><i class="bi bi-check-circled"></i>
+                Brunel University Math and Statistics Colloquium: "Ricci Flow, the Poincar&eacute Conjecture, and Bubbles". (Nov. 16, 2022).</li>
+                <li><i class="bi bi-check-circled"></i> KIT Geometric Analysis Seminar: “Bubble Tree Convergence of Gradient Ricci Shrinking Solitons” (Oct. 5, 2022).</li>
+                <li><i class="bi bi-check-circled"></i> 9<sup>th</sup> Heidelberg Laureate Forum: “Bubble Tree Convergence of Gradient Ricci Shrinking Solitons” (Sept. 19, 2022).</li>
+                <li><i class="bi bi-check-circled"></i> KCL/UCL Junior Geometry Seminar: “Bubble Tree Convergence of Gradient Ricci Shrinking Solitons” (Jan. 27, 2022).</li>
+                <li><i class="bi bi-check-circled"></i> Queen Mary Internal Postgraduate Seminar (QuIPS): “Ricci Flow and the Poincaré Conjecture” (Nov. 2, 2021).</li>
+              </ul>
+            </div>
+
+            <div class="content">
+              <h3><u>Teaching</u></h3>            
+              <u>Teaching Associate, Queen Mary University of London:</u>          
+              <ul>
+                <li>Probability and Statistics I, Fall Semester (2022/2023)</li>
+                <li> Calculus II, Spring Semester (2021/2022)</li>
+                <li>Actuarial Mathematics I, Fall Semester (2021/2022, 2022/2023)</li>
+                <li>Vectors and Matrices, Spring Semester (2019/2020)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        Designed using <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

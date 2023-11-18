@@ -279,7 +279,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const images = ["assets/pictures/kthPic.JPG","assets/pictures/qmulPic.JPG","assets/pictures/owPic.JPG"];
+const images = ["assets/pictures/qmulPic.JPG"];
 
 document.addEventListener('DOMContentLoaded', _ => {
   const randImageIndex = ~~(Math.random() * images.length);

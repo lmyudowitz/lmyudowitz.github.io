@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener
+   * Easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -239,7 +239,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -275,12 +275,11 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-    }
+    } 
   });
 }
 
-const images = ["assets/pictures/qmulPic.JPG"];
-//["assets/pictures/kthPic.JPG","assets/pictures/qmulPic.JPG","assets/pictures/owPic.JPG"];
+const images = ["assets/pictures/kthPic.jpg","assets/pictures/qmulPic.jpg","assets/pictures/owPic.JPG"];
 
 document.addEventListener('DOMContentLoaded', _ => {
   const randImageIndex = ~~(Math.random() * images.length);

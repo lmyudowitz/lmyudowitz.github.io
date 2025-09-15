@@ -279,7 +279,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-const images = ["assets/pictures/kthPic.jpg","assets/pictures/qmulPic.jpg","assets/pictures/owPic.JPG","assets/pictures/hobbitonPic.PNG"];
+const images = ["assets/pictures/kthPic.jpg","assets/pictures/qmulPic.jpg","assets/pictures/owPic.JPG","assets/pictures/iceBar.jpg"];
 
 document.addEventListener('DOMContentLoaded', _ => {
   const randImageIndex = ~~(Math.random() * images.length);

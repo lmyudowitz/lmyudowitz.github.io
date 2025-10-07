@@ -73,7 +73,7 @@
 
         <div class="row">
             <h2><b>Overview of My Research</b></h2>
-            <p>My current research largely focuses on Ricci flow, &#8706;<sub>t</sub> g(t) = -2Ric(g(t)), a geometric heat flow originally introduced to uniformize manifolds and then classify them using a surgery procedure. Due to the non-linearity of the equation, one expects to encounter finite time singularities. That is, when the curvature tensor becomes unbounded in some region as t &#8594; T. This is a common sort of behavior in non-linear PDEs and some standard problems are to understand the singularity formation by taking “blow-up limits” (zooming in on the singular region) and then classify the possible limits, as well as figuring out how to continue the flow past the singular time.</p><br>
+            <p>My current research largely focuses on Ricci flow, &#8706;<sub>t</sub> g(t) = -2Ric(g(t)), and mean curvature flow, &#8706;<sub>t</sub> F(t) = -<b>H</b>(t). These are both geometric heat flows and were originally introduced to uniformize manifolds and then classify them using a surgery procedure. Due to the non-linear nature of the equations, one expects to encounter finite time singularities. That is, when the curvature tensor becomes unbounded in some region as t &#8594; T. This is a common sort of behavior in non-linear PDEs and some standard problems are to understand the singularity formation by taking “blow-up limits” (zooming in on the singular region) and then classify the possible limits, as well as figuring out how to continue the flow past the singular time.</p><br>
 
             <h4><u>Gaussian Bounds of Heat Kernels for Evolving Manifolds</u></h4>
             <div class="center">
@@ -96,7 +96,15 @@
               <img src="assets/gifs/stability2Gif.gif" class="center">
             </div>
             <p>
-              A different way to view Ricci flow is a dynamical system acting on the space of Riemannian metrics. This then leads to the question of dynamical stability: do perturbations of a fixed point flow back to a  fixed point? For Ricci flow, the fixed points (modulo scaling and diffeomorphisms) are Ricci solitons, which can be viewed as generalizations of Einstein manifolds. This is well understood in the compact case, in large part due to the existence of a good variational theory for the so called shrinker/expander entropies and the &#955;-functional. This then leads to &#0321;ojasiewicz-Simon inequalities, which are powerful tools in proving dynamical stability. This is much harder in the non-compact case due to a lack of well-defined and finite functionals. However, some modifications have been shown to be reasonably well-behaved for certain Ricci-flat ALE manifolds and asymptotically hyperbolic manifolds. In the latter setting, Klaus Kr&#246;ncke and I have proved, via a &#0321;ojasiewicz-Simon inequality, dynamical stability of Poincar&#233;-Einstien manifolds (asymptotically hyperbolic Einstein manifolds). This is determined by whether or not the original metric is a local maximum of the entropy. This hinged on proving good Fredholm properties of the stability operator in this setting, which could potentially break down if the manifold in non-compact. Klaus and I also proved stability is equivalent to local positive mass and volume comparison properites. 
+              A different way to view Ricci flow is a dynamical system acting on the space of Riemannian metrics. This then leads to the question of dynamical stability: do perturbations of a fixed point flow back to a  fixed point? For Ricci flow, the fixed points (modulo scaling and diffeomorphisms) are Ricci solitons, which can be viewed as generalizations of Einstein manifolds. This is well understood in the compact case, in large part due to the existence of a good variational theory for the so called shrinker/expander entropies and the &#955;-functional. This then leads to &#0321;ojasiewicz-Simon inequalities, which are powerful tools in proving dynamical stability. This is much harder in the non-compact case due to a lack of well-defined and finite functionals. However, some modifications have been shown to be reasonably well-behaved for certain Ricci-flat ALE manifolds and asymptotically hyperbolic manifolds. In the latter setting, Klaus Kr&#246;ncke and I have proved, via a &#0321;ojasiewicz-Simon inequality, dynamical stability of Poincar&#233;-Einstien manifolds (asymptotically hyperbolic Einstein manifolds). This is determined by whether or not the original metric is a local maximum of the entropy. This hinged on proving good Fredholm properties of the stability operator in this setting, which could potentially break down if the manifold in non-compact. Klaus and I also proved stability is equivalent to local positive mass and volume comparison properites. <!--In a follow up paper, Klaus and I, along with Rasmus Jouttij&auml;rvi proved analogous results for metrics coupled with certain potential functions solving the static Einstein equations. These can be used to construct a warped product metric which is Poincar&#233;-Einstien, and carefully tracking the behavior of such metrics under Ricci flow along very particular paths of deformations ended up being the key method to prove our results.-->
+            </p>
+
+            <h4><u>New Ancient Solutions to Mean Curvature Flow by Stacking Pancakes</u></h4>
+            <div class="center">
+              <img src="assets/gifs/stackingGif.gif" class="center">
+            </div>
+            <p>
+              One of the most reliable ways to construct a new ancient solution (in this case for mean curvature flow) is to consider various transformations of a pre-existing one. For instance, we can start with the grim reaper, which is a self-translating solution to MCF defined as the set of points {(x,-ln(cos(x))) : |x| < <sup>&pi;</sup>&frasl;<sub>2</sub>}. One way to easily generate more solutions is to consider the product of the grim reaper curve with a Euclidean factor. These are known as grim hyperplanes. A more sophisticated method is to take two copies of the grim reaper curve with opposite pointing velocity vectors and glue them together. This new ancient solution (called the Angenent oval) is closed, convex, and lies in a slab of width &pi;. Moreover, some of its asymptotic behavior is inherited from the grim reaper by virtue of the construction. For instance, looking around a point at either tip will yield a grim reaper curve and, as t &rarr; -&#8734;, it will sweep out the slab. On the other hand, as t &rarr; 0 the Angenent oval will flow to a round point. More recently, Bourni–Langford–Tinaglia have constructed ancient solutions colloquially called “pancakes” by evolving rotated time slices of the Angenent oval by MCF. In addition to inheriting asymptotic behavior from the Angenent oval, this pancake solution is collapsed, so it falls outside of the class of ancient solutions usually considered during singularity analysis. Using these pancake solutions, another way one might try to construct new ancient solutions is by a stacking procedure. That is, taking parallel copies of a pre-existing solution and joining them together using catenoidal necks. Together, Mat Langford, Alexander Mramor, and I were able to stack 2 copies of the pancake solutions to construct a closed, embedded, non-convex ancient solution which lies in a slab. We imposed rotational symmetry on our solutions, since this helped reduce the analysis to studying a forced version of curve shortening flow and made designing the initial data much easier. We also had to impose reflection symmetry on our solution. It remains to rigorously study the asymptotic behavior of our solutions as singularities form and as t &rarr; -&#8734;. Additionally, it would be interesting to see if one can construct stacks with a larger number of pancakes and/or with less (or no) symmetry.
             </p>
         </div>
       </div>
@@ -109,12 +117,18 @@
           Here is a list of my preprints and published papers. You can click on a paper to see the abstract, links to access the ar&#967iv and journal versions, and occasionally some extra comments.
         </div>
         
-        <!--<div class="section-title">
+        <div class="section-title">
           <h3><u>Mathematical Publications</u></h3>
-        </div>-->
+        </div>
 
         <div class="row">         
           <div class="content">
+            <div style="padding-bottom: 1px">
+              <button type="button" class="collapsible">An Ancient Stacked Pancake Solution to Mean Curvature Flow. (joint with M. Langford and A. Mramor)<br> Preprint. arXiv: 2509.26515.</button>
+              <div class="hiddencontent">
+                <p><br>We prove lower and upper semi-continuity of the Morse index for sequences of gradient Ricci shrinkers which bubble tree converge in the sense of past work by the author and Buzano. Our proofs rely on adapting recent arguments of Workman which were used to study certain sequences of CMC hypersurfaces and were in turn adapted from work of Da Lio-Gianocca-Rivi&#232;re. Moreover, we are able to refine Workman's methods by using techniques related to polynomially weighted Sobolev spaces. This all also requires us to extend the analysis to handle when the shrinkers we study are non-compact, which we can do due to the availability of a suitable notion of finite weighted volume. Finally, we identify a technical condition which ensures the Morse index of an asymptotically conical shrinker is bounded below by the f-index of its asymptotic cone.<br><br>[<a href="https://arxiv.org/abs/2509.26515" target="_blank" rel="noopener noreferrer">Ar&#967;iv</a>]</p>
+              </div>
+            </div> 
             <div style="padding-bottom: 1px">
               <button type="button" class="collapsible">Semi-Continuity of the Morse Index for Ricci Shrinkers.<br> Journal of Geometric Analysis Volume 35, Number 159 (2025). </button>
               <div class="hiddencontent">
@@ -125,6 +139,7 @@
               <button type="button" class="collapsible">Dynamical Stability and Instability of Poincar&#233;–Einstein Manifolds (joint with K. Kr&#246;ncke).<br> Calculus of Variations and Partial Differential Equations Volume 64, Number 31 (2024).</button>
               <div class="hiddencontent">
                 <p><br>We prove dynamical stability and instability theorems for Poincar&#233;-Einstein metrics under the Ricci flow. Our key tool is a variant of the expander entropy for asymptotically hyperbolic manifolds, which Dahl, McCormick and the first author established in a recent article. It allows us to characterize stability and instability in terms of a local positive mass theorem and in terms of volume comparison for nearby metrics.<br><br>[<a href="https://arxiv.org/abs/2312.13011" target="_blank" rel="noopener noreferrer">Ar&#967;iv</a>, <a href="https://link.springer.com/article/10.1007/s00526-024-02890-7" target="_blank" rel="noopener noreferrer">Journal</a>]</p>
+                <p>Comment: There are a few typos in the final journal version that slipped past us. The corresponding arguments in my follow-up paper "Static Vacuum Spacetimes with &Lambda; < 0 as Attractors of the Harmonic-Ricci Flow" show how to correct the typos. Also, DeTurck was spelled in a variety of ways and should be “DeTurck” throughout the paper.
               </div>
             </div>         
             <div style="padding-bottom: 1px">
@@ -133,9 +148,9 @@
                 <p><br>We prove bubble-tree convergence of sequences of gradient Ricci shrinkers with uniformly bounded entropy and uniform local energy bounds, refining the compactness theory of Haslhofer-M&#252;ller. In particular, we show that no energy concentrates in neck regions, a result which implies a local energy identity for the sequence. Direct consequences of these results are an identity for the Euler characteristic and a local diffeomorphism finiteness theorem.<br><br>[<a href="https://arxiv.org/abs/2206.06791" target="_blank" rel="noopener noreferrer">Ar&#967;iv</a>, <a href="https://link.springer.com/article/10.1007/s00209-023-03272-z" target="_blank" rel="noopener noreferrer">Journal</a>]</p>
                 <p>Comment: There are two slight (but easily correctible) errors in the proof of Lemma 3.1. When showing the first inequality in the proof, one needs to account for the remaining connected components of the annulus. It should thus be
 
-                Vol<sub>f</sub>(<span style="text-decoration:overline">A</span><sub>s<sub>1</sub>,s<sub>2</sub></sub>(q)) &le; 2Vol<sub>f</sub>(<span style="text-decoration:overline">B</span><sub>g</sub>(q,s<sub>2</sub>) \ D<sub>1</sub>)
+                Vol<sub>f</sub>(<span style="text-decoration:overline">A</span><sub>s<sub>1</sub>,s<sub>2</sub></sub>(q)) &le; 2Vol<sub>f</sub>(<span style="text-decoration:overline">B</span><sub>g</sub>(q,s<sub>2</sub>) \ D<sub>1</sub>) .
 
-                 Also, the second sentence in the proof should be: "Note that any minimising geodesic &gamma;(t) in <span style="text-decoration:overline">A</span><sub>s<sub>1</sub>,s<sub>2</sub></sub>(q)...".</p>
+                Also, the second sentence in the proof should be: "Note that any minimising geodesic &gamma;(t) in <span style="text-decoration:overline">A</span><sub>s<sub>1</sub>,s<sub>2</sub></sub>(q)...".</p>
               </div>
             </div>
             <div style="padding-bottom: 20px">
@@ -146,43 +161,6 @@
             </div>
           </div>
         </div>
-        <!--<br>
-        <div class="section-title">
-          <h3><u>Other Publications</u></h3>
-        </div>
-
-        <div class="row">         
-          <div class="content">
-            <div style="padding-bottom: 1px">
-              <button type="button" class="collapsible">Snap Judgements and Availability Bias in Travel Decisions (joint with W. Riggs).<br> Transportation Research Record: Journal of the Transportation Research Board Volume 2675, Issue 11, pp. 89-96 (2021).</button>
-              <div class="hiddencontent">
-                <p><br>Past research has explored how travelers make economic decisions, but only a small number of papers look at financial nudges and price anchoring—how they might cause travelers to make snap judgements about value that undermine rational economic principles. This research explores the behavioral response to different kinds of incentives. It finds that, consistent with theory, when presented with two numbers certain individuals will anchor to a higher number and be willing to pay more. Likewise, it finds that certain consumers are not able to quickly make judgements about the cost of travel. When the survey participants were offered daily or monthly payment plans, payments each day were valued almost twice as much as a single payment each month. This offers important policy considerations for public agencies seeking to reduce driving, particularly as new disruptive platforms emerge and new technology allows for more dynamic and curated data to be used to nudge travel behavior.<br><br>[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3765738" target="_blank" rel="noopener noreferrer">SSRN</a>, <a href="https://journals.sagepub.com/doi/10.1177/03611981211015992" target="_blank" rel="noopener noreferrer">Journal</a>]</p>
-              </div>
-            </div>
-            <div style="padding-bottom: 1px">
-              <button type="button" class="collapsible">Climate Change and Automation: Do We Have an Emissions Problem?. (joint with W. Riggs, M. Boswell, and M. Kawashima).<br> Disruptive Transport, Chapter 13, pp. 179-186 (2018)</button>
-              <div class="hiddencontent">
-                <p><br>What is the impact of new mobility on the environment and climate change? We outline efforts to address global climate change and how auto electrification, sharing and automation to those. We then outline strategies that should be paramount to help mobility transition to an equitable future that is both shared and environmentally sustainable.<br><br>[<a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9780429464652-13/climate-change-automation-william-riggs-michael-boswell-louis-yudowitz-matthew-kawashima" target="_blank" rel="noopener noreferrer">Taylor Francis Store Page</a>]</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-title">
-          <h3><u>Unpublished Documents</u></h3>
-        </div>
-
-        <div class="row">         
-          <div class="content">
-            <div style="padding-bottom: 1px">
-              <button type="button" class="collapsible">From Hearing the Shape of a Drum to Conjugacy Classes of the Alternating Group</button>
-              <div class="hiddencontent">
-                <p><br>TO DO <br><br>[<a href="" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>-->
     </section>
 
     <section id="outreach" class="outreach">
@@ -196,12 +174,13 @@
             <img class="mySlides w3-animate-fading" src="assets/pictures/mainTask.PNG">
             <img class="mySlides w3-animate-fading" src="assets/pictures/vhSample1.PNG">
             <img class="mySlides w3-animate-fading" src="assets/pictures/vhSample2.PNG">
+            <img class="mySlides w3-animate-fading" src="assets/pictures/vhPresenting.jpg">
           </div>
           <div class="col-md-6">
             <div class="icon-box">
-              <p>Over the past few years I have been involved with designing and running mathematical outreach workshops which communicate aspects of mathematical thinking. My current efforts are largely focused on collaborating with various people in Sydney, Australia, as well as the Vetenskapens Hus in Stockholm, Sweden to achieve this goal, primarily through a "cake cutting" workshop I have helped create.</p> 
+              <p>Over the past few years I have been involved with designing and running mathematical outreach workshops which communicate aspects of mathematical thinking. My current efforts are largely focused on collaborating with various people in Sydney, Australia, as well as the Vetenskapens Hus in Stockholm, Sweden to achieve this goal, primarily through a “cake cutting” workshop I have helped create.</p> 
               <br>
-              <p>If you are interested in the workshop, feel free to check out the facilitation guide my collaborator and I wrote: <a href="assets/facilitatorGuide.pdf" target="_blank" rel="noopener noreferrer"><b>view PDF</b></a>. If you run this on your own, it would be appreciated if we are given credit for designing the event to help spread the word. So far, this workshop has been run at the uDash event in Sydney, as well as at the most recent Pi Day event at the <a href="https://www.vetenskapenshus.se/" target="_blank" rel="noopener noreferrer"><b>Vetenskapens Hus</b></a>. It is still being refined, so if you have any comments or ideas please let me know! The slideshow located next to this paragraph has some pictures from the two events.</p>
+              <p>If you are interested in the workshop, feel free to check out the facilitation guide my collaborator (<a href="https://www.unsw.edu.au/staff/yudhi-bunjamin" target="_blank" rel="noopener noreferrer"><b>Yudhi Bunjamin</b></a>) and I wrote: <a href="assets/facilitatorGuide.pdf" target="_blank" rel="noopener noreferrer"><b>view PDF</b></a>. If you run this on your own, it would be appreciated if we are given credit for designing the event to help spread the word. So far, this workshop has been run at the uDash event in Sydney, as well as at the most recent Pi Day event at the <a href="https://www.vetenskapenshus.se/" target="_blank" rel="noopener noreferrer"><b>Vetenskapens Hus</b></a>. It is still being refined, so if you have any comments or ideas please let me know! The slideshow located next to this paragraph has some pictures from the two events.</p>
               <br>
               <p>I am also involved with a matteklubben (math club) in Stockholm which is a run by students and staff at KTH and Stockholm university. Click <a href="https://www.math-stockholm.se/samverkan/matteklubben" target="_blank" rel="noopener noreferrer"><b>here</b></a> for more information if you or someone you know would be interested in attending!</p>
             </div>
@@ -214,12 +193,21 @@
         <div class="section-title">
           <br><br><h2>Talks, Teaching, and Other Activities</h2>
         </div> 
-
-        <div class="col-lg-12 order-1 order-lg-2">       
-          <div class="content">
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-md-6">
+            <img src="assets/pictures/cop1.jpg" height="500px" width="100%" style="border-radius: 50px;">
+            <br><br><br><br>
+            <img src="assets/pictures/cop2.jpg" height="500px" width="100%" style="border-radius: 50px;">
+            <br><br><br><br>
+            <img src="assets/pictures/cop3.jpg" height="500px" width="100%" style="border-radius: 50px;">
+          </div>
+          <div class="col-md-6">
+            <div class="content">
             <h3><u>Talks Given</u></h3>            
             <ul>
-              <li>OVGU Geometric Analysis Seminar: “Semi-Continuity of the Morse Index for Ricci Shrinkers” (May 15, 2025).</li>
+              <li>Workshop on Geometry and PDEs (at the University of Copenhagen): “Semi-Continuity of the Morse Index for Ricci Shrinkers” (September 25, 2025).</li>
+              <li>Masterclass “Flows and Singular Spaces”: “Semi-Continuity of the Morse Index for Ricci Shrinkers” (June 25, 2025).</li>
+              <li>OVGU and University of Hannover Joint Seminar on Differential Geometry and Analysis: “Semi-Continuity of the Morse Index for Ricci Shrinkers” (May 15, 2025).</li>
               <li>Joint meeting of the NZMS, AustMS and AMS Special Session on Differential Geometry and Geometric Analysis: “Dynamical Stability and Instability of Poincar&eacute-Einstein Manifolds” (December 13, 2024).</li>
               <li>Joint meeting of the NZMS, AustMS and AMS Special Session on Recent Advances in Geometric PDEs: “Semi-Continuity of the Morse Index for Ricci Shrinkers” (December 10, 2024).</li>
               <li>Joint meeting of the NZMS, AustMS and AMS Special Session on Engagement with Mathematics Through Communication and Outreach: “A "Soft" Framework for Designing Outreach About Mathematical Thinking” (December 9, 2024).</li>
@@ -265,6 +253,18 @@
         </div>
       </div>
     </section>
+
+    <!--<section id="activities" class="activities">
+      <div class="container">
+        <div class="section-title">
+          <br><br><h2>Talks, Teaching, and Other Activities</h2>
+        </div> 
+
+        <div class="col-lg-12 order-1 order-lg-2">       
+          
+        </div>
+      </div>
+    </section>-->
   </main>
 
   <footer id="footer">
